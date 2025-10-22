@@ -21,11 +21,12 @@ body {
     border-radius: 10px;
     background-color: #cf9595;
     height: 400px;
-    width: 375px;
+    width: 350px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10%;
+    box-shadow: 25px 29px 5px -3px rgba(168,134,134,0.39);
 }
 
 .image {
@@ -72,4 +73,12 @@ button:hover {
 
 button:active {
     scale: 2;
+}
+
+#toggle:checked ~ .profile {
+    display: none;
+}
+
+#toggle {
+    display: none;
 }
