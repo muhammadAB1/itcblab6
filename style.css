@@ -82,3 +82,16 @@ button:active {
 #toggle {
     display: none;
 }
+
+
+#toggle:checked ~ .open {
+    display: block;
+}
+
+.open {
+    display: none;
+}
+
+#toggle:checked ~ .close {
+    display: none;
+}
